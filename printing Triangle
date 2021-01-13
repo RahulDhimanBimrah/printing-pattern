@@ -1,0 +1,16 @@
+#Enter the number of rows from users
+def tri(nrow):
+    if nrow%2==0:
+        k=(nrow//2)+nrow
+    else:
+        k=((nrow+1)//2)+nrow
+    
+    for i in range (0,nrow):#for rows
+        for j in range(0,k):#for space in rows
+            print(end=" ")
+        for x in range(0,i):
+            print(end="* ")
+        k=k-1
+        print('\n')
+    
+print(tri(5))
